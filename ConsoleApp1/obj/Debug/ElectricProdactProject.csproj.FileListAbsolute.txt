@@ -1,0 +1,2 @@
+C:\Users\User\Desktop\Electric Prodact Project\ConsoleApp1\ConsoleApp1\obj\Debug\ElectricProdactProject.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Electric Prodact Project\ConsoleApp1\ConsoleApp1\obj\Debug\ElectricProdactProject.csproj.CoreCompileInputs.cache
