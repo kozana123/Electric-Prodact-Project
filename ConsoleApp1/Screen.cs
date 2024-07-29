@@ -12,14 +12,16 @@ namespace ConsoleApp1
 {
     internal class Screen: ElectricProduct
     {
+        static int amount = 0;
         private double size;
         private ScreenType screenType;
         private PowerSupply powerSupply;
-        public Screen(double size, ScreenType type, PowerSupply powerSupply ,string name, int price, Catagory catagory, Company company,Color color) : base(name, price, catagory, company, color)
+        public Screen(double size, ScreenType type, PowerSupply powerSupply ,string name, int price, Company company, Color color, Catagory catagory = Catagory.Display) : base(name, price, catagory, company, color)
         {
             this.size = size;
             this.screenType = type;
             this.powerSupply = powerSupply;
+            
         }
 
         public void SetSize(double size) {  this.size = size; }
@@ -34,7 +36,10 @@ namespace ConsoleApp1
 
         public PowerSupply GetPowerSupply() {  return this.powerSupply;}
 
-        
+        public static int GetAmount()
+        {
+            return amount;
+        }
 
 
     }

@@ -39,6 +39,7 @@ namespace ConsoleApp1
         private Catagory catagory;
         private Company company;
         private Color color;
+        
 
         public ElectricProduct(string name, int price, Catagory catagory, Company company, Color color)
         {
