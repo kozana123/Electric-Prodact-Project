@@ -31,6 +31,11 @@ namespace ConsoleApp1
             this.powerSupply = powerSupply;
         }
 
+        public Refrigerador()
+        {
+            
+        }
+
         public void SetAmountOfDoors(int amountOfDoors) { this.amountOfDoors=amountOfDoors; }
 
         public void SetRefrigeradorType(RefrigeradorType type) {  this.type = type; }
@@ -44,6 +49,17 @@ namespace ConsoleApp1
         public static int GetAmount()
         {
             return amount;
+        }
+
+        public static void RemoveAmount()
+        {
+            amount--;
+        }
+
+        public override string ToString()
+        {
+
+            return $"{base.ToString()}Amount of doors: {amountOfDoors}\nRefrigerador type: {type}\n";
         }
 
 

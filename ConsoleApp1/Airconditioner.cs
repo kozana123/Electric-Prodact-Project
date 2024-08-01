@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
@@ -34,6 +35,11 @@ namespace ConsoleApp1
             amount++;
         }
 
+        public Airconditioner()
+        {
+
+        }
+
         public void SetVentilationType(VentilationType type) {  this.type = type; }
 
         public void SetEnergyRate(int energyRate) {  this.energyRate = energyRate; }
@@ -52,9 +58,20 @@ namespace ConsoleApp1
         public int GetCoolingOutput() {  return this.coolingOutput; }
         public PowerSupply GetPowerSupply() { return this.powerSupply; }
 
-        static int GetAmount()
+        public static int GetAmount()
         {
             return amount;
+        }
+
+        public static void RemoveAmount()
+        {
+            amount--;
+        }
+
+        public override string ToString()
+        {
+            
+            return $"{base.ToString()}VentilationType: {type}\nEnergyRate: {energyRate}\nHeating Output: {heatingOutput}\nCooling Output: {coolingOutput}";
         }
 
     }

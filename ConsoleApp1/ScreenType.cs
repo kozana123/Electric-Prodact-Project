@@ -40,6 +40,10 @@ namespace ConsoleApp1
         public Technology GetTechnology() {  return this .technology;}
 
 
+        public override string ToString()
+        {
 
+            return $"Technology: {this.technology}, Speed: {this.speed}, Resolution: {this.resolution}";
+        }
     }
 }

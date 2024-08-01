@@ -30,5 +30,10 @@ namespace ConsoleApp1
         public int GetWatt() { return this.watt; }
         public bool GetEcoMode() {  return this.ecoMode; }
 
+        public override string ToString()
+        {
+            return $"eco: {ecoMode}, Watt:{watt}";
+        }
+
     }   
 }

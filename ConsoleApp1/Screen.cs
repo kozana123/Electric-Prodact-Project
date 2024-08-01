@@ -41,6 +41,17 @@ namespace ConsoleApp1
             return amount;
         }
 
+        public static void RemoveAmount()
+        {
+            amount--;
+        }
+
+        public override string ToString()
+        {
+
+            return $"{base.ToString()}Size: {size}\nScreen Type: {screenType.ToString()}\n";
+        }
+
 
     }
 }
